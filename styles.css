@@ -113,6 +113,8 @@ body::before {
   text-decoration: none;
   color: var(--white);
   flex-shrink: 0;
+  flex: 1;
+  max-width: 500px;
 }
 
 .nav-brand img {
@@ -124,6 +126,7 @@ body::before {
   display: flex;
   flex-direction: column;
   line-height: 1.15;
+  flex: 1;
 }
 
 .nav-brand-title {
@@ -1197,7 +1200,10 @@ section {
   margin-bottom: 1.2rem;
 }
 
-.footer-brand img { height: 40px; }
+.footer-brand img {
+  height: 80px;
+  width: auto;
+}
 
 .footer-brand-text {
   font-family: var(--serif);
