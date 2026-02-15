@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biblioteca del Campus Juriquilla — UNAM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Sans+3:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ═══════════ NAVIGATION ═══════════ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#inicio" class="nav-brand">
+      <img src="assets/logo-bcj.png" alt="BCJ UNAM">
+      <div class="nav-brand-text">
+        <span class="nav-brand-title">Biblioteca Campus Juriquilla</span>
+        <span class="nav-brand-sub">Universidad Nacional Autónoma de México</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#inicio" class="active" data-i18n="nav_inicio">Inicio</a></li>
+      <li><a href="#nosotros" data-i18n="nav_nosotros">Nosotros</a></li>
+      <li><a href="#servicios" data-i18n="nav_servicios">Servicios</a></li>
+      <li><a href="#catalogos" data-i18n="nav_catalogos">Catálogos</a></li>
+      <li><a href="#personal" data-i18n="nav_personal">Personal</a></li>
+      <li><a href="#directorio" data-i18n="nav_directorio">Directorio</a></li>
+      <li><a href="#eventos" data-i18n="nav_eventos">Eventos</a></li>
+      <li><a href="#formularios" data-i18n="nav_formularios">Formularios</a></li>
+    </ul>
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="es"><span class="flag">🇲🇽</span> ES</button>
+      <button class="lang-btn" data-lang="en"><span class="flag">🇺🇸</span> EN</button>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#inicio" data-i18n="nav_inicio">Inicio</a>
+  <a href="#nosotros" data-i18n="nav_nosotros">Nosotros</a>
+  <a href="#servicios" data-i18n="nav_servicios">Servicios</a>
+  <a href="#catalogos" data-i18n="nav_catalogos">Catálogos</a>
+  <a href="#personal" data-i18n="nav_personal">Personal</a>
+  <a href="#directorio" data-i18n="nav_directorio">Directorio</a>
+  <a href="#eventos" data-i18n="nav_eventos">Eventos</a>
+  <a href="#formularios" data-i18n="nav_formularios">Formularios</a>
+  <div class="mobile-lang-switch">
+    <button class="lang-btn active" data-lang="es"><span class="flag">🇲🇽</span> Español</button>
+    <button class="lang-btn" data-lang="en"><span class="flag">🇺🇸</span> English</button>
+  </div>
+</div>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero" id="inicio">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-label" data-i18n="hero_label">Campus Juriquilla, Querétaro</div>
+      <h1 data-i18n="hero_title">Biblioteca del<br>Campus <em>Juriquilla</em></h1>
+      <p class="hero-desc" data-i18n="hero_desc">Unidad de información especializada en Neurociencias, Ciencias de la Tierra, Física Aplicada y Tecnología Avanzada de la Universidad Nacional Autónoma de México.</p>
+      <div class="hero-actions">
+        <a href="#catalogos" class="btn btn-primary"><span>📚</span> <span data-i18n="hero_btn_catalog">Explorar Catálogos</span></a>
+        <a href="#nosotros" class="btn btn-outline" data-i18n="hero_btn_more">Conocer más →</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div class="stat-number" data-i18n="stat1_num">14,000+</div>
+        <div class="stat-label" data-i18n="stat1_label">Volúmenes de libros</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-i18n="stat2_num">431</div>
+        <div class="stat-label" data-i18n="stat2_label">Títulos de revistas científicas</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-i18n="stat3_num">1,300+</div>
+        <div class="stat-label" data-i18n="stat3_label">Tesis de licenciatura a doctorado</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-i18n="stat4_num">107</div>
+        <div class="stat-label" data-i18n="stat4_label">Suscripciones vigentes</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ RESOURCES BAND ═══════════ -->
+<div class="resources-band">
+  <div class="container">
+    <div class="resources-inner">
+      <a href="#" class="resource-btn"><span class="r-icon">📊</span> <span data-i18n="res_produccion">Producción Científica del Campus</span></a>
+      <a href="#" class="resource-btn"><span class="r-icon">📋</span> <span data-i18n="res_boletin">Boletín de Nuevas Adquisiciones</span></a>
+      <a href="#" class="resource-btn"><span class="r-icon">🛒</span> <span data-i18n="res_venta">Venta de Libros</span></a>
+      <a href="#" class="resource-btn"><span class="r-icon">📖</span> <span data-i18n="res_reglamento">Reglamento de Biblioteca</span></a>
+      <a href="#" class="resource-btn"><span class="r-icon">🔬</span> <span data-i18n="res_investigadores">Investigadores Nacionales 2021</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ ABOUT ═══════════ -->
+<section id="nosotros">
+  <div class="container">
+    <div class="about-grid reveal">
+      <div class="about-image-stack">
+        <div class="about-accent"></div>
+        <div class="about-img about-img-1">
+          <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=640&q=80" alt="Biblioteca interior">
+        </div>
+        <div class="about-img about-img-2">
+          <img src="https://images.unsplash.com/photo-1568667256549-094345857637?w=640&q=80" alt="Libros estantería">
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="section-label" data-i18n="about_label">Acerca de nosotros</div>
+        <h2 class="section-title" data-i18n="about_title">Una tradición de<br>conocimiento científico</h2>
+        <p data-i18n="about_p1">La Biblioteca del Campus Juriquilla quedó establecida el 24 de noviembre de 2006 con la integración de los acervos de las bibliotecas departamentales del Instituto de Neurobiología, Centro de Geociencias y del Centro de Física Aplicada y Tecnología Avanzada, constituyéndose como un importante centro documental para las unidades de investigación que le dieron origen.</p>
+        <p data-i18n="about_p2">Actualmente se encuentra ubicada en el edificio del Centro Académico Cultural del Campus y cuenta con una amplia diversidad de materiales: revistas científicas, publicaciones periódicas y seriadas, obras monográficas, mapas y material multimedia, disponibles para la consulta de estudiantes, investigadores y visitantes en general.</p>
+      </div>
+    </div>
+
+    <div class="collections-grid reveal">
+      <div class="collection-card">
+        <div class="collection-icon">🧠</div>
+        <h4 data-i18n="coll1_title">Colección Rafael Lorente de Nó</h4>
+        <p data-i18n="coll1_desc">Dibujos que representan la anatomía del cerebro realizados por el célebre fisiólogo, resguardados como parte de la riqueza del acervo de esta biblioteca.</p>
+      </div>
+      <div class="collection-card">
+        <div class="collection-icon">☀️</div>
+        <h4 data-i18n="coll2_title">Exposición de Relojes Solares</h4>
+        <p data-i18n="coll2_desc">Exposición permanente de piezas únicas realizadas por el Dr. Lothar Max Kuhnert Loske, especialista en Mecánica de Precisión y Cronometría.</p>
+      </div>
+      <div class="collection-card">
+        <div class="collection-icon">🌍</div>
+        <h4 data-i18n="coll3_title">Áreas de Especialización</h4>
+        <p data-i18n="coll3_desc">Neurociencias, Geociencias, Física y Tecnología Avanzada, Genoma Humano, Ingeniería, Matemáticas y otras áreas afines de investigación.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SERVICES ═══════════ -->
+<section id="servicios">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label" data-i18n="svc_label">Nuestros servicios</div>
+      <h2 class="section-title" data-i18n="svc_title">Todo lo que necesitas para tu investigación</h2>
+      <p class="section-desc" data-i18n="svc_desc">Ofrecemos una amplia gama de servicios para apoyar las tareas de investigación, docencia y estudio en el Campus Juriquilla.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">📦</div>
+        <h3 data-i18n="svc1_title">Desarrollo de Colecciones y Procesos Técnicos</h3>
+        <p data-i18n="svc1_desc">Compra de materiales bibliográficos para la Biblioteca, apoyo a investigadores y estudiantes en la gestión y compra de materiales para uso personal.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🔍</div>
+        <h3 data-i18n="svc2_title">Documentación y Servicios Especializados</h3>
+        <p data-i18n="svc2_desc">Recuperación de documentos solicitados con fines de investigación, revisión y búsqueda de citas a trabajos de investigación publicados por investigadores del Campus.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">📖</div>
+        <h3 data-i18n="svc3_title">Préstamo en Sala</h3>
+        <p data-i18n="svc3_desc">Los materiales bibliográficos requeridos por usuarios internos y externos son proporcionados en préstamo dentro de las instalaciones de la Biblioteca.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🔄</div>
+        <h3 data-i18n="svc4_title">Préstamo Interbibliotecario</h3>
+        <p data-i18n="svc4_desc">Recuperación de libros y documentos de otras bibliotecas a través de convenios, exclusivo para el personal con registro en la Biblioteca.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">📤</div>
+        <h3 data-i18n="svc5_title">Préstamo Externo</h3>
+        <p data-i18n="svc5_desc">Libros de acervo general, excepto los de consulta y reserva, se prestan para su consulta fuera de la Biblioteca. Exclusivo para usuarios con registro.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">💬</div>
+        <h3 data-i18n="svc6_title">Consulta y Orientación</h3>
+        <p data-i18n="svc6_desc">Orientación a los usuarios tanto del interior como de otras instituciones que acuden en busca de información para sus actividades escolares y de investigación.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🖨️</div>
+        <h3 data-i18n="svc7_title">Fotocopiado e Impresión</h3>
+        <p data-i18n="svc7_desc">Servicio exclusivo para materiales de la biblioteca en modalidad de autoservicio o con el responsable. También se puede imprimir textos directamente.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">📄</div>
+        <h3 data-i18n="svc8_title">Digitalización Documental</h3>
+        <p data-i18n="svc8_desc">Digitalización de documentos y textos en modalidad de autoservicio. No se permite la digitalización de textos completos para respetar derechos de autor.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">💻</div>
+        <h3 data-i18n="svc9_title">Servicios Electrónicos</h3>
+        <p data-i18n="svc9_desc">Espacio con equipos de cómputo para búsqueda y localización de información, realización de trabajos académicos, y acceso a red inalámbrica.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🏛️</div>
+        <h3 data-i18n="svc10_title">Otros Espacios</h3>
+        <p data-i18n="svc10_desc">Sala de Juntas, cubículos para estudio en grupo, sala multimedios, mesas de trabajo individual y Audiorama con espacio abierto y música ambiental.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🗺️</div>
+        <h3 data-i18n="svc11_title">Visitas Guiadas</h3>
+        <p data-i18n="svc11_desc">Visitas guiadas disponibles para grupos e instituciones interesadas. Deben ser solicitadas con antelación para coordinar la actividad.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">📶</div>
+        <h3 data-i18n="svc12_title">Red Inalámbrica</h3>
+        <p data-i18n="svc12_desc">El edificio cuenta con acceso a red inalámbrica para que todos aquellos que tienen un equipo personal puedan conectarse a Internet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CATÁLOGOS ═══════════ -->
+<section id="catalogos">
+  <div class="cat-pattern"></div>
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label" data-i18n="cat_label">Catálogos y Bases de Datos</div>
+      <h2 class="section-title" data-i18n="cat_title">Acceso al conocimiento global</h2>
+      <p class="section-desc" data-i18n="cat_desc">Explora nuestros catálogos, bases de datos internacionales, revistas de acceso abierto y registros de patentes.</p>
+    </div>
+
+    <div class="catalogo-tabs reveal">
+      <button class="cat-tab active" data-tab="catalogs" data-i18n="tab_catalogs">Catálogos</button>
+      <button class="cat-tab" data-tab="databases" data-i18n="tab_databases">Bases de Datos</button>
+      <button class="cat-tab" data-tab="journals" data-i18n="tab_journals">Revistas Abiertas</button>
+      <button class="cat-tab" data-tab="geo" data-i18n="tab_geo">Geociencias</button>
+      <button class="cat-tab" data-tab="patents" data-i18n="tab_patents">Patentes</button>
+      <button class="cat-tab" data-tab="thesis" data-i18n="tab_thesis">Tesis</button>
+    </div>
+
+    <div class="cat-content reveal">
+      <!-- Catálogos -->
+      <div class="cat-panel active" id="catalogs">
+        <div class="cat-grid">
+          <a href="#" class="cat-item"><div class="cat-item-icon">📚</div><div class="cat-item-text"><h4 data-i18n="cat_bcj">Catálogo BCJ</h4><span data-i18n="cat_bcj_sub">Más de 14,000 volúmenes</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">📕</div><div class="cat-item-text"><h4 data-i18n="cat_librunam">LIBRUNAM</h4><span data-i18n="cat_librunam_sub">Catálogo general UNAM</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">📰</div><div class="cat-item-text"><h4 data-i18n="cat_seriunam">SERIUNAM</h4><span data-i18n="cat_seriunam_sub">Publicaciones seriadas</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">🎓</div><div class="cat-item-text"><h4 data-i18n="cat_tesiunam">TESIUNAM</h4><span data-i18n="cat_tesiunam_sub">Tesis UNAM</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">💿</div><div class="cat-item-text"><h4 data-i18n="cat_digitalab">DIGITALAB-SSIE</h4><span data-i18n="cat_digitalab_sub">Revistas con acuerdos UNAM</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">📊</div><div class="cat-item-text"><h4 data-i18n="cat_repo">Repositorio</h4><span data-i18n="cat_repo_sub">Producción Científica del Campus</span></div></a>
+        </div>
+      </div>
+      <!-- Bases de Datos -->
+      <div class="cat-panel" id="databases">
+        <div class="cat-grid">
+          <a href="#" class="cat-item"><div class="cat-item-icon">🧬</div><div class="cat-item-text"><h4 data-i18n="db_ncbi">NCBI</h4><span data-i18n="db_ncbi_sub">National Center for Biotechnology</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">🌐</div><div class="cat-item-text"><h4 data-i18n="db_wos">ISI Web of Science</h4><span data-i18n="db_wos_sub">Base de datos multidisciplinaria</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">🔬</div><div class="cat-item-text"><h4 data-i18n="db_scopus">Scopus</h4><span data-i18n="db_scopus_sub">Resúmenes y citas</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">💊</div><div class="cat-item-text"><h4 data-i18n="db_pubmed">PubMed</h4><span data-i18n="db_pubmed_sub">Ciencias biomédicas</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">📈</div><div class="cat-item-text"><h4 data-i18n="db_jcr">Journal Citation Reports</h4><span data-i18n="db_jcr_sub">Factor de impacto</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">📋</div><div class="cat-item-text"><h4 data-i18n="db_ccc">Current Contents Connect</h4><span data-i18n="db_ccc_sub">Alertas bibliográficas</span></div></a>
+        </div>
+      </div>
+      <!-- Revistas -->
+      <div class="cat-panel" id="journals">
+        <div class="cat-grid">
+          <a href="#" class="cat-item"><div class="cat-item-icon">📖</div><div class="cat-item-text"><h4 data-i18n="jr_wiley">Wiley Open Access</h4><span data-i18n="jr_wiley_sub">Revistas de acceso abierto</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">📂</div><div class="cat-item-text"><h4 data-i18n="jr_doaj">DOAJ</h4><span data-i18n="jr_doaj_sub">Directory of Open Access Journals</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">📑</div><div class="cat-item-text"><h4 data-i18n="jr_elsevier">Elsevier Open Access</h4><span data-i18n="jr_elsevier_sub">Revistas abiertas Elsevier</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">🔓</div><div class="cat-item-text"><h4 data-i18n="jr_sd">ScienceDirect Open Access</h4><span data-i18n="jr_sd_sub">Acceso abierto ScienceDirect</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">🌍</div><div class="cat-item-text"><h4 data-i18n="jr_omics">OMICS International</h4><span data-i18n="jr_omics_sub">Publicaciones científicas</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">🏛️</div><div class="cat-item-text"><h4 data-i18n="jr_oxford">Oxford University Press</h4><span data-i18n="jr_oxford_sub">Journals</span></div></a>
+        </div>
+      </div>
+      <!-- Geociencias -->
+      <div class="cat-panel" id="geo">
+        <div class="cat-grid">
+          <a href="#" class="cat-item"><div class="cat-item-icon">🌤️</div><div class="cat-item-text"><h4 data-i18n="geo_uniatmos">UNIATMOS</h4><span data-i18n="geo_uniatmos_sub">Ciencias Atmosféricas</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">🌏</div><div class="cat-item-text"><h4 data-i18n="geo_geobase">GEOBASE</h4><span data-i18n="geo_geobase_sub">Base de datos geográfica</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">⛰️</div><div class="cat-item-text"><h4 data-i18n="geo_georef">GEOREF</h4><span data-i18n="geo_georef_sub">Geociencias y referencias</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">🗺️</div><div class="cat-item-text"><h4 data-i18n="geo_geomex">GEOMEX</h4><span data-i18n="geo_geomex_sub">Geología de México UNAM</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">📍</div><div class="cat-item-text"><h4 data-i18n="geo_mapamex">MAPAMEX</h4><span data-i18n="geo_mapamex_sub">Mapas de México UNAM</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">⚡</div><div class="cat-item-text"><h4 data-i18n="geo_inspec">INSPEC</h4><span data-i18n="geo_inspec_sub">Física, electrónica, computación</span></div></a>
+        </div>
+      </div>
+      <!-- Patentes -->
+      <div class="cat-panel" id="patents">
+        <div class="cat-grid">
+          <a href="#" class="cat-item"><div class="cat-item-icon">🍁</div><div class="cat-item-text"><h4 data-i18n="pat_canada">Canadian Intellectual Property Office</h4><span data-i18n="pat_canada_sub">Patentes de Canadá</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">🆓</div><div class="cat-item-text"><h4 data-i18n="pat_fpo">Free Patents Online</h4><span data-i18n="pat_fpo_sub">Búsqueda gratuita de patentes</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">🔎</div><div class="cat-item-text"><h4 data-i18n="pat_google">Google Patents</h4><span data-i18n="pat_google_sub">Buscador de patentes</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">🌐</div><div class="cat-item-text"><h4 data-i18n="pat_wipo">WIPO</h4><span data-i18n="pat_wipo_sub">Organización Mundial de Propiedad Intelectual</span></div></a>
+        </div>
+      </div>
+      <!-- Tesis -->
+      <div class="cat-panel" id="thesis">
+        <div class="cat-grid">
+          <a href="#" class="cat-item"><div class="cat-item-icon">⚛️</div><div class="cat-item-text"><h4 data-i18n="th_cfata">CFATA</h4><span data-i18n="th_cfata_sub">Centro de Física Aplicada y Tecnología Avanzada</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">🌍</div><div class="cat-item-text"><h4 data-i18n="th_geo">Geociencias</h4><span data-i18n="th_geo_sub">Centro de Geociencias</span></div></a>
+          <a href="#" class="cat-item"><div class="cat-item-icon">🧠</div><div class="cat-item-text"><h4 data-i18n="th_neuro">Neurobiología</h4><span data-i18n="th_neuro_sub">Instituto de Neurobiología</span></div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PERSONAL ═══════════ -->
+<section id="personal">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label" data-i18n="per_label">Nuestro equipo</div>
+      <h2 class="section-title" data-i18n="per_title">Personal de la Biblioteca</h2>
+      <p class="section-desc" data-i18n="per_desc">Equipo profesional comprometido con brindar el mejor servicio a la comunidad académica.</p>
+    </div>
+    <div class="staff-grid">
+      <div class="staff-card reveal">
+        <div class="staff-role" data-i18n="role_coord">Coordinación</div>
+        <div class="staff-name">Dr. Francisco Javier Valles Valenzuela</div>
+        <div class="staff-contact">
+          <a href="mailto:javalles@comunidad.unam.mx">✉ javalles@comunidad.unam.mx</a>
+          <span>📞 56234233 / (442) 1926133</span>
+        </div>
+      </div>
+      <div class="staff-card reveal">
+        <div class="staff-role" data-i18n="role_dev">Desarrollo de Colecciones y Procesos Técnicos</div>
+        <div class="staff-name">Lic. Teresa Soledad Medina Malagón</div>
+        <div class="staff-contact">
+          <a href="mailto:tsmedinam@comunidad.unam.mx">✉ tsmedinam@comunidad.unam.mx</a>
+          <span>📞 56234237 / (442) 1926137</span>
+        </div>
+      </div>
+      <div class="staff-card reveal">
+        <div class="staff-role" data-i18n="role_doc">Documentación y Servicios Especializados</div>
+        <div class="staff-name">Lic. Teresita de Jesús Pérez Cruz</div>
+        <div class="staff-contact">
+          <a href="mailto:perezcruzt@comunidad.unam.mx">✉ perezcruzt@comunidad.unam.mx</a>
+          <span>📞 56234236 / (442) 1926136</span>
+        </div>
+      </div>
+      <div class="staff-card reveal">
+        <div class="staff-role" data-i18n="role_pub">Servicios al Público</div>
+        <div class="staff-name">Lic. Teresita de Jesús Pérez Cruz</div>
+        <div class="staff-contact">
+          <a href="mailto:perezcruzt@comunidad.unam.mx">✉ perezcruzt@comunidad.unam.mx</a>
+          <span>📞 56234239 / (442) 1926141</span>
+        </div>
+      </div>
+      <div class="staff-card reveal">
+        <div class="staff-role" data-i18n="role_jefe">Jefe de Biblioteca — Servicios al Público</div>
+        <div class="staff-name">Susana Morales Flores</div>
+        <div class="staff-contact">
+          <a href="mailto:anasusy@comunidad.unam.mx">✉ anasusy@comunidad.unam.mx</a>
+          <span>📞 (442) 1926139 / 56234239 (ext. UNAM)</span>
+        </div>
+      </div>
+      <div class="staff-card reveal">
+        <div class="staff-role" data-i18n="role_bib">Bibliotecario</div>
+        <div class="staff-name">Lic. Rafael Silva Cruz</div>
+        <div class="staff-contact"><span>📞 (442) 1926139 / 56234239 (ext. UNAM)</span></div>
+      </div>
+      <div class="staff-card reveal">
+        <div class="staff-role" data-i18n="role_biba">Bibliotecaria</div>
+        <div class="staff-name">Martha Montealegre Avelino</div>
+        <div class="staff-contact"><span>📞 (442) 1926139 / 56234239 (ext. UNAM)</span></div>
+      </div>
+      <div class="staff-card reveal">
+        <div class="staff-role" data-i18n="role_jefe_sec">Jefe de Sección</div>
+        <div class="staff-name">Fernando Galván Mendoza</div>
+        <div class="staff-contact"><span>📞 (442) 1926139 / 56234239 (ext. UNAM)</span></div>
+      </div>
+      <div class="staff-card reveal">
+        <div class="staff-role" data-i18n="role_proc">Procesos Técnicos — Bibliotecaria</div>
+        <div class="staff-name">Crisanta Reséndiz Arvizu</div>
+        <div class="staff-contact"><span>📞 (442) 1926137 / 56234237 (ext. UNAM)</span></div>
+      </div>
+      <div class="staff-card reveal">
+        <div class="staff-role" data-i18n="role_foto">Fotocopiado y Digitalización</div>
+        <div class="staff-name">Beatriz Arreola García</div>
+        <div class="staff-contact"><span>📞 (442) 1926143 / 56234243 (ext. UNAM)</span></div>
+      </div>
+      <div class="staff-card reveal">
+        <div class="staff-role" data-i18n="role_sec">Secretario</div>
+        <div class="staff-name">Carlos Caballero Padilla</div>
+        <div class="staff-contact">
+          <a href="mailto:biblio@juriquilla.unam.mx">✉ biblio@juriquilla.unam.mx</a>
+          <span>📞 (442) 1926143 / 56234243 (ext. UNAM)</span>
+        </div>
+      </div>
+      <div class="staff-card reveal">
+        <div class="staff-role" data-i18n="role_int">Intendencia</div>
+        <div class="staff-name">Alma Rosa Corrales Torres</div>
+        <div class="staff-contact"><span>📞 (442) 1926139 / 56234239 (ext. UNAM)</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ DIRECTORIO ═══════════ -->
+<section id="directorio">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label" data-i18n="dir_label">Directorio</div>
+      <h2 class="section-title" data-i18n="dir_title">Órganos de Dirección</h2>
+    </div>
+
+    <div class="dir-group reveal">
+      <h3 data-i18n="dir_consejo">Consejo de Dirección del Campus Juriquilla</h3>
+      <div class="dir-list">
+        <div class="dir-item"><div class="dir-avatar">MT</div><div class="dir-info"><h4>Dra. Ma. Teresa Morales Guzmán</h4><span data-i18n="dir_mt_role">Directora del Instituto de Neurobiología</span></div></div>
+        <div class="dir-item"><div class="dir-avatar">JP</div><div class="dir-info"><h4>Dr. Juan Pablo Bernal Uruchurtu</h4><span data-i18n="dir_jp_role">Director del Instituto de Geociencias</span></div></div>
+        <div class="dir-item"><div class="dir-avatar">JL</div><div class="dir-info"><h4>Dr. José Luis Aragón Vera</h4><span data-i18n="dir_jl_role">Director del Centro de Física Aplicada y Tecnología Avanzada</span></div></div>
+        <div class="dir-item"><div class="dir-avatar">RP</div><div class="dir-info"><h4>Raúl Paredes Guerrero</h4><span data-i18n="dir_rp_role">Director de la ENES-Juriquilla</span></div></div>
+        <div class="dir-item"><div class="dir-avatar">GB</div><div class="dir-info"><h4>Dr. Germán Buitrón Méndez</h4><span data-i18n="dir_gb_role">Coordinador de la Unidad Académica Juriquilla del Instituto de Ingeniería</span></div></div>
+        <div class="dir-item"><div class="dir-avatar">ML</div><div class="dir-info"><h4>Dr. Marcelo López Parra</h4><span data-i18n="dir_ml_role">Unidad de Alta Tecnología de la Facultad de Ingeniería</span></div></div>
+        <div class="dir-item"><div class="dir-avatar">GC</div><div class="dir-info"><h4>Dra. Gabriela Castaño Meneses</h4><span data-i18n="dir_gc_role">Responsable de la Unidad Multidisciplinaria de Docencia e Investigación, Juriquilla</span></div></div>
+        <div class="dir-item"><div class="dir-avatar">DO</div><div class="dir-info"><h4>Dra. Deborah Oliveros Braniff</h4><span data-i18n="dir_do_role">Instituto de Matemáticas Unidad Juriquilla</span></div></div>
+        <div class="dir-item"><div class="dir-avatar">MA</div><div class="dir-info"><h4>Dra. María C. Ávila Arcos</h4><span data-i18n="dir_ma_role">Laboratorio Internacional de Investigación sobre el Genoma Humano</span></div></div>
+        <div class="dir-item"><div class="dir-avatar">AA</div><div class="dir-info"><h4>Dra. Anaid Antaramián Salas</h4><span data-i18n="dir_aa_role">Coordinadora de Servicios Administrativos del Campus Juriquilla</span></div></div>
+      </div>
+    </div>
+
+    <div class="dir-group reveal">
+      <h3 data-i18n="dir_comite">Comité de Biblioteca</h3>
+      <div class="dir-list">
+        <div class="dir-item"><div class="dir-avatar">FV</div><div class="dir-info"><h4>Dr. Francisco Javier Valles Valenzuela</h4><span data-i18n="dir_fv_role">Coordinador de la Biblioteca del Campus Juriquilla</span></div></div>
+        <div class="dir-item"><div class="dir-avatar">TP</div><div class="dir-info"><h4>Lic. Teresita de Jesús Pérez Cruz</h4><span data-i18n="dir_tp_role">Representante del Personal Académico de la Biblioteca</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ EVENTOS ═══════════ -->
+<section id="eventos">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label" data-i18n="evt_label">Eventos</div>
+      <h2 class="section-title" data-i18n="evt_title">Actividades y presentaciones</h2>
+      <p class="section-desc" data-i18n="evt_desc">Eventos culturales y académicos organizados por la Biblioteca del Campus Juriquilla.</p>
+    </div>
+    <div class="events-grid">
+      <div class="event-card reveal">
+        <div class="event-image">
+          <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=640&q=80" alt="Presentación de libros">
+          <div class="event-date" data-i18n="evt1_date">28 de Septiembre</div>
+        </div>
+        <div class="event-body">
+          <div class="event-type" data-i18n="evt1_type">Presentación de Libros</div>
+          <h3 data-i18n="evt1_title">Experimentos simples para una tierra complicada</h3>
+          <p data-i18n="evt1_desc">Presentación de la nueva versión de los cuadernillos de experimentos científicos, traducida a cinco idiomas: chino, inglés, italiano, alemán y francés. La actividad estuvo a cargo de la Dra. Susana Alaníz, investigadora del Centro de Geociencias de la UNAM.</p>
+        </div>
+      </div>
+      <div class="event-card reveal">
+        <div class="event-image">
+          <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=640&q=80" alt="Exposición litográfica">
+          <div class="event-date" data-i18n="evt2_date">12 de Noviembre</div>
+        </div>
+        <div class="event-body">
+          <div class="event-type" data-i18n="evt2_type">Exposición Litográfica</div>
+          <h3 data-i18n="evt2_title">Fuego de unos instantes: humo, ceniza… y litografía</h3>
+          <p data-i18n="evt2_desc">Exposición de litografías a cargo de la Dra. Laura del Carmen Mayagoitia, que incluyó grabados de etiquetas de cigarros realizados con técnica litográfica, acompañada de la conferencia «YETL ITACATL TETEO» sobre el uso ceremonial del tabaco en culturas prehispánicas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FORMULARIOS ═══════════ -->
+<section id="formularios">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label" data-i18n="frm_label">Formularios</div>
+      <h2 class="section-title" data-i18n="frm_title">Trámites y solicitudes</h2>
+      <p class="section-desc" data-i18n="frm_desc">Descarga los formularios necesarios para acceder a los servicios de la biblioteca.</p>
+    </div>
+    <div class="forms-grid">
+      <a href="#" class="form-card reveal"><div class="form-icon">📝</div><h4 data-i18n="frm1_title">Registro de Usuarios</h4><p data-i18n="frm1_desc">Formulario para registrarse como usuario de la biblioteca</p></a>
+      <a href="#" class="form-card reveal"><div class="form-icon">📨</div><h4 data-i18n="frm2_title">Solicitud de Documentos</h4><p data-i18n="frm2_desc">Solicitar documentos por préstamo interbibliotecario</p></a>
+      <a href="#" class="form-card reveal"><div class="form-icon">🛍️</div><h4 data-i18n="frm3_title">Compra de Libros</h4><p data-i18n="frm3_desc">Solicitar la compra de materiales bibliográficos</p></a>
+      <a href="#" class="form-card reveal"><div class="form-icon">📜</div><h4 data-i18n="frm4_title">Reglamento</h4><p data-i18n="frm4_desc">Consulta el reglamento de la biblioteca</p></a>
+      <a href="#" class="form-card reveal"><div class="form-icon">⚠️</div><h4 data-i18n="frm5_title">Protocolo de Servicios Limitados</h4><p data-i18n="frm5_desc">Protocolo vigente para servicios con restricciones</p></a>
+      <a href="#" class="form-card reveal"><div class="form-icon">🔬</div><h4 data-i18n="frm6_title">Investigadores Nacionales Eméritos</h4><p data-i18n="frm6_desc">Listado 1992-2020 del Sistema Nacional de Investigadores</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/logo-bcj.png" alt="BCJ UNAM" style="height:40px">
+          <img src="assets/logo-unam.png" alt="UNAM" style="height:44px; margin-left:8px">
+        </div>
+        <p data-i18n="ft_desc">Unidad de información especializada en Neurociencias, Ciencias de la Tierra, Física Aplicada y Tecnología Avanzada de la UNAM.</p>
+        <div class="footer-contact">
+          <span>📍 Boulevard Juriquilla No. 3001, Juriquilla, Querétaro C.P. 76230</span>
+          <span>📞 555-555-5555</span>
+          <span>📠 Fax: 555-555-5555</span>
+          <span>✉ alguien@example.com</span>
+        </div>
+      </div>
+      <div>
+        <h4 data-i18n="ft_nav">Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="#inicio" data-i18n="nav_inicio">Inicio</a></li>
+          <li><a href="#nosotros" data-i18n="nav_nosotros">Nosotros</a></li>
+          <li><a href="#servicios" data-i18n="nav_servicios">Servicios</a></li>
+          <li><a href="#catalogos" data-i18n="nav_catalogos">Catálogos</a></li>
+          <li><a href="#personal" data-i18n="nav_personal">Personal</a></li>
+          <li><a href="#directorio" data-i18n="nav_directorio">Directorio</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="ft_services">Servicios</h4>
+        <ul class="footer-links">
+          <li><a href="#" data-i18n="ft_prestamos">Préstamos</a></li>
+          <li><a href="#" data-i18n="ft_consulta">Consulta</a></li>
+          <li><a href="#" data-i18n="ft_documentacion">Documentación</a></li>
+          <li><a href="#" data-i18n="ft_fotocopiado">Fotocopiado</a></li>
+          <li><a href="#" data-i18n="ft_electronicos">Servicios Electrónicos</a></li>
+          <li><a href="#" data-i18n="ft_visitas">Visitas Guiadas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="ft_resources">Recursos</h4>
+        <ul class="footer-links">
+          <li><a href="#" data-i18n="ft_reglamento">Reglamento</a></li>
+          <li><a href="#" data-i18n="ft_registro">Registro de Usuarios</a></li>
+          <li><a href="#" data-i18n="ft_produccion">Producción Científica</a></li>
+          <li><a href="#" data-i18n="ft_investigadores">Investigadores Nacionales</a></li>
+          <li><a href="#" data-i18n="ft_boletin">Boletín de Adquisiciones</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-institutes">
+      <span class="footer-inst">Instituto de Neurobiología</span>
+      <span class="footer-inst">Centro de Geociencias (CGEO)</span>
+      <span class="footer-inst">CFATA</span>
+      <span class="footer-inst">LIPORA</span>
+      <span class="footer-inst">ENES Juriquilla</span>
+      <span class="footer-inst">Centro Académico Cultural (CAC)</span>
+    </div>
+
+    <div class="footer-bottom">
+      <p data-i18n="ft_copyright">© UNAM. Biblioteca de Campus Juriquilla 2009–2024</p>
+      <div class="footer-credits" data-i18n="ft_credits">Créditos: Dr. Francisco Javier Valles V. | Colab. Lic. Soledad Medina M.</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+
+<script src="main.js"></script>
+</body>
+</html>
